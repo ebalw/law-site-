@@ -3,297 +3,331 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР — юридическая помощь для бизнеса и частных лиц</title>
-<meta name="description" content="Юридическая компания ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»: консультации, договоры, суды, банкротство. Работаем с 2015 года по всей РФ.">
-<meta property="og:title" content="ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР">
-<meta property="og:description" content="Юридическая помощь для бизнеса и частных лиц. Бесплатная консультация.">
+<title>Юридическая помощь гражданам — ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР</title>
+<meta name="description" content="Помощь с долгами, приставами, коллекторами, банкротством и судами. Бесплатная консультация. Работаем с 2015 года по всей России.">
+<meta property="og:title" content="ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР — юридическая помощь гражданам">
+<meta property="og:description" content="Долги, приставы, коллекторы, суды. Первая консультация бесплатно.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":["LegalService","LocalBusiness"],"name":"ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»","taxID":"5528030891","foundingDate":"2015-04-17","founder":"Гомелев Максим Евгеньевич","address":{"@type":"PostalAddress","postalCode":"644501","addressRegion":"Омская область","addressLocality":"п. Новоомский","streetAddress":"ул. Титова, д. 1, кв. 89","addressCountry":"RU"}}
+{"@context":"https://schema.org","@type":["LegalService","LocalBusiness"],"name":"ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»","taxID":"5528030891","foundingDate":"2015-04-17","address":{"@type":"PostalAddress","postalCode":"644501","addressRegion":"Омская область","addressLocality":"п. Новоомский","streetAddress":"ул. Титова, д. 1, кв. 89","addressCountry":"RU"}}
 </script>
 <style>
 :root{
-  --navy:#14213a; --navy2:#1d2d4d; --ink:#1b2335; --grey:#5d6678; --line:#d9dde5; --paper:#f4f5f8; --white:#fff;
-  --accent:#8a2236; --accent-h:#6f1a2b; --gold:#b9964f; --ok:#1d7a4d;
-  --serif:"PT Serif",Georgia,"Times New Roman",serif; --sans:"PT Sans","Segoe UI",Arial,sans-serif;
+  --bg:#fff; --soft:#eef4f8; --ink:#1c2a39; --mute:#566577; --line:#d8e0e8; --brand:#17406e; --cta:#1b7f55; --cta-h:#146644; --hero:#17406e; --on-hero:#fff; --hero-mute:#c9d8ea;
+  --sans:"PT Sans","Segoe UI",Roboto,Arial,sans-serif;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e9ecf3;--grey:#a3adc0;--line:#2c3a58;--paper:#101a2e;--white:#16223b}}
-:root[data-theme="dark"]{--ink:#e9ecf3;--grey:#a3adc0;--line:#2c3a58;--paper:#101a2e;--white:#16223b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1824;--soft:#16222f;--ink:#e8eef5;--mute:#9fb0c3;--line:#2a3a4c;--brand:#8cb8ea;--hero:#12263d;--cta:#25a06c;--cta-h:#2bb47a}}
+:root[data-theme="dark"]{--bg:#0f1824;--soft:#16222f;--ink:#e8eef5;--mute:#9fb0c3;--line:#2a3a4c;--brand:#8cb8ea;--hero:#12263d;--cta:#25a06c;--cta-h:#2bb47a}
 *,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
-body{margin:0;font:17px/1.6 var(--sans);color:var(--ink);background:var(--white)}
-h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0 0 .5em}
-h2{font-size:clamp(1.6rem,3.2vw,2.2rem)}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.alt{background:var(--paper)}
-.btn{display:inline-block;border:0;cursor:pointer;font:700 1rem var(--sans);padding:14px 26px;background:var(--accent);color:#fff;text-decoration:none;border-radius:3px;transition:background .15s}
-.btn:hover{background:var(--accent-h)}
-.btn.ghost{background:transparent;border:1px solid currentColor}
-/* header */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--navy);color:#fff}
-.bar{display:flex;align-items:center;gap:20px;min-height:72px;flex-wrap:wrap;padding-block:8px}
-.logo{font:700 1.05rem var(--serif);text-decoration:none;letter-spacing:.01em;margin-right:auto}
-.logo small{display:block;font:400 .72rem var(--sans);color:#aab4c8}
-nav{display:flex;gap:20px;font-size:.95rem}
-nav a{text-decoration:none;color:#d6dcea}nav a:hover{color:#fff}
-.contacts-h{font-size:.92rem;color:#d6dcea}
-.btn.sm{padding:9px 16px;font-size:.92rem}
-@media(max-width:860px){nav,.contacts-h{display:none}}
-/* hero */
-.hero{background:var(--navy);color:#fff;padding:64px 0 80px}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
-.hero h1{font-size:clamp(2rem,4.6vw,3.4rem);margin-bottom:.4em}
-.hero p.lead{color:#c3cce0;font-size:1.15rem;max-width:34em}
-.facts{display:flex;gap:28px;margin:32px 0;flex-wrap:wrap;border-top:1px solid #35466b;padding-top:20px}
-.facts b{display:block;font:700 1.6rem var(--serif);color:var(--gold)}
-.facts span{font-size:.88rem;color:#aab4c8}
-@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
-/* form */
-.card{background:var(--white);color:var(--ink);padding:28px;border-top:4px solid var(--gold);border-radius:3px}
-.card h2{font-size:1.4rem}
-label{display:block;font-size:.9rem;font-weight:700;margin:14px 0 4px}
-input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:3px;background:var(--white);color:var(--ink)}
-textarea{min-height:90px;resize:vertical}
-.err{color:#c0392b;font-size:.83rem;min-height:1.1em;margin-top:2px}
-input.bad,select.bad{border-color:#c0392b}
-.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.85rem;margin-top:16px}
-.chk input{width:auto;margin-top:4px}
-.card .btn{width:100%;margin-top:14px}
+html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--sans);padding-bottom:84px}
+h1,h2,h3{line-height:1.25;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(1.9rem,6vw,2.9rem)} h2{font-size:clamp(1.5rem,4.5vw,2rem)}
+p{margin:0 0 1em} a{color:inherit}
+:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+section{padding:44px 0}.soft{background:var(--soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border:0;border-radius:12px;background:var(--cta);color:#fff;font:700 1.05rem var(--sans);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--cta-h)} .btn.line{background:transparent;border:2px solid currentColor}
+/* шапка */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.logo{font-weight:700;text-decoration:none;line-height:1.15;font-size:1rem;color:var(--brand)} .logo small{display:block;font-weight:400;color:var(--mute);font-size:.8rem}
+.tel{font-weight:700;text-decoration:none;white-space:nowrap}
+@media(max-width:420px){.tel span{display:none}}
+/* первый экран */
+.hero{background:var(--hero);color:var(--on-hero);padding:40px 0 48px}
+.hero p.lead{color:var(--hero-mute);font-size:1.12rem;max-width:34em}
+.ticks{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:10px}
+.ticks li{padding-left:32px;position:relative}
+.ticks li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:#2bb47a;color:#fff;font-size:.9rem;display:grid;place-items:center;line-height:1}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.line{color:#fff}
+.sub{font-size:.9rem;color:var(--hero-mute);margin:16px 0 0}
+/* строки-ссылки */
+.rows{border-top:1px solid var(--line);margin-top:16px}
+.rows a,.rows button{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:16px 4px;border:0;border-bottom:1px solid var(--line);background:none;color:inherit;font:inherit;text-decoration:none;cursor:pointer;min-height:64px}
+.rows b{display:block;font-size:1.05rem;color:var(--brand)} .rows small{display:block;color:var(--mute);font-size:.92rem;line-height:1.4}
+.rows i{margin-left:auto;font-style:normal;color:var(--mute);font-size:1.4rem;flex:none}
+.rows a:hover,.rows button:hover{background:var(--soft)}
+/* шаги */
+ol.st{list-style:none;counter-reset:s;padding:0;margin:20px 0 0;display:grid;gap:18px}
+ol.st li{counter-increment:s;display:flex;gap:16px;align-items:flex-start}
+ol.st li::before{content:counter(s);flex:none;width:40px;height:40px;border-radius:50%;background:var(--brand);color:var(--bg);font-weight:700;display:grid;place-items:center}
+ol.st b{display:block}ol.st span{color:var(--mute);font-size:.97rem}
+/* вопросы */
+details{border-bottom:1px solid var(--line)} summary{cursor:pointer;padding:16px 28px 16px 0;font-weight:700;list-style:none;position:relative;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:1.5rem;color:var(--mute)} details[open] summary::after{content:"–"}
+details p{color:var(--mute);padding-right:20px}
+/* о компании */
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:.95rem;margin:16px 0}dt{color:var(--mute)}dd{margin:0;font-weight:700}
+.map{display:block;width:100%;height:320px;border:1px solid var(--line);border-radius:12px;margin-top:16px;background:var(--soft)}
+.cl{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.cl .btn{min-height:46px;padding:8px 18px;font-size:1rem}
+footer{padding:28px 0;font-size:.85rem;color:var(--mute);border-top:1px solid var(--line)}
+footer a{color:var(--brand)}
+/* плавающая строка заявки */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08);padding:10px 0 calc(10px + env(safe-area-inset-bottom,0px))}
+.dock .wrap{display:flex;gap:10px;align-items:center}
+.dock .btn{flex:1;min-height:48px}
+.dock .call{flex:none;width:48px;min-height:48px;padding:0;background:var(--soft);color:var(--brand);border:1px solid var(--line);font-size:1.3rem}
+.dock .txt{display:none;color:var(--mute);font-size:.95rem}
+@media(min-width:700px){.dock .txt{display:block;flex:1}.dock .btn{flex:none}}
+/* форма-шторка */
+dialog{border:0;padding:0;width:100%;max-width:480px;background:var(--bg);color:var(--ink);border-radius:18px}
+dialog::backdrop{background:rgba(8,16,28,.6)}
+@media(max-width:600px){dialog{margin:auto 0 0;max-width:none;border-radius:18px 18px 0 0;padding-bottom:env(safe-area-inset-bottom,0px)}}
+.dlg{padding:22px 18px 20px;position:relative}
+.x{position:absolute;right:8px;top:8px;width:44px;height:44px;border:0;background:none;color:var(--mute);font-size:1.8rem;cursor:pointer}
+label{display:block;font-weight:700;font-size:.95rem;margin:14px 0 4px}
+input,select,textarea{width:100%;font:inherit;font-size:1.05rem;padding:13px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+textarea{min-height:76px;resize:vertical}
+.err{color:#c0392b;font-size:.85rem;min-height:1.1em}input.bad{border-color:#c0392b}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.85rem;margin-top:14px;color:var(--mute)}
+.chk input{width:22px;height:22px;flex:none;margin-top:1px}
+#send{width:100%;margin-top:14px}
 .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
-#msg{margin-top:12px;font-size:.95rem}
-#msg.ok{color:var(--ok)}#msg.fail{color:#c0392b}
-/* services */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:32px}
-.svc{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--accent);padding:22px}
-.svc h3{font-size:1.1rem}.svc p{margin:0;color:var(--grey);font-size:.95rem}
-.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:32px}
-.why div{border-top:2px solid var(--gold);padding-top:14px}
-.why h3{font-size:1.05rem}.why p{margin:0;color:var(--grey);font-size:.95rem}
-/* steps */
-ol.steps{list-style:none;counter-reset:s;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
-ol.steps li{counter-increment:s;padding:0 16px 0 0;position:relative}
-ol.steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font:700 1.1rem var(--serif);margin-bottom:12px;position:relative;z-index:1}
-ol.steps li::after{content:"";position:absolute;top:20px;left:40px;right:0;height:1px;background:var(--line)}
-ol.steps li:last-child::after{display:none}
-ol.steps b{display:block}ol.steps span{font-size:.9rem;color:var(--grey)}
-@media(max-width:760px){ol.steps{grid-template-columns:1fr;gap:20px}ol.steps li::after{display:none}}
-/* about */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-@media(max-width:760px){.about{grid-template-columns:1fr}}
-dl.req{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 20px;font-size:.95rem}
-dl.req dt{color:var(--grey)}dl.req dd{margin:0;font-weight:700}
-.note{font-size:.85rem;color:var(--grey);margin-top:16px}
-.map{display:block;width:100%;height:380px;border:1px solid var(--line);border-radius:3px;margin-top:20px;background:var(--paper)}
-/* footer */
-footer{background:var(--navy);color:#aab4c8;padding:36px 0;font-size:.88rem}
-footer a{color:#d6dcea}
-.fl{display:flex;gap:20px;flex-wrap:wrap;margin-top:10px}
-dialog{max-width:560px;border:0;border-radius:4px;padding:28px;background:var(--white);color:var(--ink)}
-dialog::backdrop{background:rgba(10,16,30,.6)}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+#msg{margin-top:12px}#msg.ok{color:#1d7a4d;font-weight:700}#msg.fail{color:#c0392b}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 12px}
+.tab{border:1.5px solid var(--line);background:none;color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:.92rem;cursor:pointer;min-height:44px}
+.tab[aria-selected=true]{background:var(--brand);color:var(--bg);border-color:var(--brand)}
+#doc{max-width:640px}
+#db{max-height:60vh;overflow:auto;font-size:.95rem;padding-right:4px}
+#db h3{font-size:1.02rem;margin:1.1em 0 .3em}#db p{margin:0 0 .7em}#db ul{padding-left:20px;margin:0 0 .7em}
+#db .dt{color:var(--mute);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap bar">
-    <a class="logo" href="#top">ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР<small>Юридическая компания, с 2015 года</small></a>
-    <nav aria-label="Основное меню">
-      <a href="#services">Услуги</a><a href="#about">О компании</a><a href="#process">Как мы работаем</a><a href="#contacts">Контакты</a>
-    </nav>
-    <span class="contacts-h">+7 (000) 000-00-00 · info@example.ru</span><!-- TODO: реальные контакты -->
-    <a class="btn sm" href="#lead">Оставить заявку</a>
-  </div>
-</header>
+<header><div class="wrap bar">
+  <a class="logo" href="#top">ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР<small>юридическая помощь гражданам</small></a>
+  <a class="tel" data-tel href="#">📞 <span data-cfg="phone"></span></a>
+</div></header>
 
 <main id="top">
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <h1>Юридическая помощь для бизнеса и частных лиц</h1>
-      <p class="lead">Консультации, договоры, представительство в судах, взыскание долгов и банкротство. Работаем по всей России.</p>
-      <div class="facts">
-        <div><b>с 2015</b><span>года на рынке</span></div>
-        <div><b>10+ лет</b><span>опыта руководителя</span></div>
-        <div><b>по всей РФ</b><span>работаем удалённо</span></div>
-      </div>
-      <a class="btn ghost" href="#lead">Получить консультацию</a>
-    </div>
+<div class="hero"><div class="wrap">
+  <h1>Долги, приставы, суд? Подскажем, что делать</h1>
+  <p class="lead">Разберём вашу ситуацию и предложим понятный план действий. Первая консультация бесплатно.</p>
+  <ul class="ticks">
+    <li>Объясняем простым языком, без «юридического»</li>
+    <li>Стоимость фиксируем в договоре до начала работы</li>
+    <li>Работаем по всей России, в том числе дистанционно</li>
+  </ul>
+  <div class="row"><button class="btn" data-open>Бесплатная консультация</button><a class="btn line" data-tel href="#">Позвонить</a></div>
+  <p class="sub">Работаем с 2015 года · ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»</p>
+</div></div>
 
-    <div class="card" id="lead">
-      <h2>Заявка на консультацию</h2>
-      <form id="f" novalidate>
-        <div class="hp" aria-hidden="true"><label>Сайт<input name="website" tabindex="-1" autocomplete="off"></label></div>
-        <label for="name">Имя *</label>
-        <input id="name" name="name" autocomplete="name" required><div class="err" data-for="name"></div>
-        <label for="phone">Телефон *</label>
-        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required><div class="err" data-for="phone"></div>
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" autocomplete="email"><div class="err" data-for="email"></div>
-        <label for="type">Тип вопроса</label>
-        <select id="type" name="type"><option>Консультация</option><option>Бизнес</option><option>Суд</option><option>Банкротство</option><option>Другое</option></select>
-        <label for="text">Кратко опишите вопрос</label>
-        <textarea id="text" name="text"></textarea>
-        <label class="chk"><input type="checkbox" id="agree" name="agree">
-          <span>Я согласен(на) на обработку персональных данных и ознакомлен(а) с <a href="#" data-dlg="privacy">политикой конфиденциальности</a> *</span></label>
-        <div class="err" data-for="agree"></div>
-        <button class="btn" type="submit" id="send">Отправить заявку</button>
-        <div id="msg" role="status" aria-live="polite"></div>
-      </form>
-    </div>
-  </div>
-</section>
+<section><div class="wrap">
+  <h2>С чем мы помогаем</h2>
+  <p style="color:var(--mute)">Нажмите на свой вопрос, и мы свяжемся с вами.</p>
+  <div class="rows" id="help"></div>
+</div></section>
 
-<section id="services" class="alt">
-  <div class="wrap">
-    <h2>Наши услуги</h2>
-    <div class="grid" id="svcList"></div>
-  </div>
-</section>
+<section class="soft"><div class="wrap">
+  <h2>Как это проходит</h2>
+  <ol class="st">
+    <li><div><b>Вы оставляете заявку</b><span>Имя и телефон, остальное расскажете по телефону.</span></div></li>
+    <li><div><b>Мы перезваниваем</b><span>В течение 15 минут в рабочее время, бесплатно разбираем ситуацию.</span></div></li>
+    <li><div><b>Договор и работа</b><span>Если решите продолжить, фиксируем объём и цену в договоре.</span></div></li>
+  </ol>
+</div></section>
 
-<section id="why">
-  <div class="wrap">
-    <h2>Почему выбирают нас</h2>
-    <div class="why">
-      <div><h3>Работаем с 2015 года</h3><p>Компания зарегистрирована 17 апреля 2015 года и работает без перерывов.</p></div>
-      <div><h3>10+ лет опыта директора</h3><p>Дела ведёт руководитель компании, а не стажёр.</p></div>
-      <div><h3>Прозрачные условия</h3><p>Стоимость и порядок работы фиксируем в договоре до начала.</p></div>
-      <div><h3>Чистая репутация</h3><p>Нет санкций, блокировок счетов и сведений о банкротстве.</p></div>
-    </div>
-  </div>
-</section>
+<section><div class="wrap">
+  <h2>Полезные ссылки</h2>
+  <p style="color:var(--mute)">Официальные сервисы, которые пригодятся самостоятельно.</p>
+  <div class="rows" id="links"></div>
+</div></section>
 
-<section id="process" class="alt">
-  <div class="wrap">
-    <h2>Как мы работаем</h2>
-    <ol class="steps">
-      <li><b>Заявка</b><span>Вы оставляете контакты и описываете вопрос</span></li>
-      <li><b>Консультация</b><span>Бесплатно разбираем ситуацию</span></li>
-      <li><b>Договор</b><span>Фиксируем объём работ и стоимость</span></li>
-      <li><b>Решение</b><span>Ведём дело до результата</span></li>
-      <li><b>Отчёт</b><span>Передаём документы и итоги</span></li>
-    </ol>
-  </div>
-</section>
+<section class="soft"><div class="wrap">
+  <h2>Частые вопросы</h2>
+  <details><summary>Консультация правда бесплатная?</summary><p>Да, первая консультация бесплатная. Если понадобится дальнейшая работа, стоимость назовём заранее и закрепим в договоре.</p></details>
+  <details><summary>Что нужно для обращения?</summary><p>Достаточно рассказать ситуацию. Если есть документы (договоры, постановления приставов, судебные бумаги), держите их под рукой, но без них тоже можно начать.</p></details>
+  <details><summary>Я живу в другом городе. Вы поможете?</summary><p>Да, мы работаем по всей России: консультируем по телефону и в мессенджерах.</p></details>
+  <details><summary>Как вы используете мои данные?</summary><p>Только чтобы связаться с вами по заявке. Подробности в <a href="#" data-dlg="privacy">политике конфиденциальности</a>.</p></details>
+</div></section>
 
-<section id="about">
-  <div class="wrap about">
-    <div>
-      <h2>О компании</h2>
-      <p>ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР» оказывает юридические услуги бизнесу и частным лицам. Руководит компанией и является её учредителем Гомелев Максим Евгеньевич — с момента основания.</p>
-      <p>Основной вид деятельности — деятельность в области права (ОКВЭД 69.1). Компания применяет упрощённую систему налогообложения.</p>
-    </div>
-    <div>
-      <dl class="req">
-        <dt>Наименование</dt><dd>ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»</dd>
-        <dt>ОГРН</dt><dd>1155543015231</dd>
-        <dt>ИНН / КПП</dt><dd>5528030891 / 552801001</dd>
-        <dt>Дата регистрации</dt><dd>17 апреля 2015 г.</dd>
-        <dt>Генеральный директор</dt><dd>Гомелев Максим Евгеньевич</dd>
-        <dt>Юридический адрес</dt><dd>644501, Омская обл., Омский р-н, п. Новоомский, ул. Титова, д. 1, кв. 89</dd>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<section id="contacts" class="alt">
-  <div class="wrap">
-    <h2>Контакты</h2>
-    <p>644501, Омская область, Омский район, п. Новоомский, ул. Титова, д. 1, кв. 89</p>
-    <p>Телефон: +7 (000) 000-00-00 · E-mail: info@example.ru<br>Часы работы: пн–пт, 9:00–18:00</p><!-- TODO: реальные контакты и часы -->
-    <p style="display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn sm" href="https://wa.me/70000000000" rel="noopener">WhatsApp</a>
-      <a class="btn sm" href="https://t.me/username" rel="noopener">Telegram</a>
-      <a class="btn sm ghost" style="color:var(--ink)" href="https://yandex.ru/maps/?text=%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%BF.%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BE%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%82%D0%BE%D0%B2%D0%B0%2C%201" rel="noopener">Открыть на Яндекс.Картах</a>
-    </p>
-    <iframe class="map" src="https://yandex.ru/map-widget/v1/?text=%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%BF.%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BE%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%82%D0%BE%D0%B2%D0%B0%2C%201&z=16" title="Карта: юридический адрес компании" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-  </div>
-</section>
+<section id="about"><div class="wrap">
+  <h2>О компании</h2>
+  <p>ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР» работает с 2015 года. Генеральный директор — Гомелев Максим Евгеньевич.</p>
+  <dl>
+    <dt>ОГРН</dt><dd>1155543015231</dd>
+    <dt>ИНН / КПП</dt><dd>5528030891 / 552801001</dd>
+    <dt>Адрес</dt><dd>644501, Омская обл., Омский р-н, п. Новоомский, ул. Титова, д. 1, кв. 89</dd>
+    <dt>Часы работы</dt><dd data-cfg="hours"></dd>
+    <dt>E-mail</dt><dd data-cfg="email"></dd>
+  </dl>
+  <div class="cl"><a class="btn line" data-tg href="#" rel="noopener">Telegram</a><a class="btn line" data-wa href="#" rel="noopener">WhatsApp</a></div>
+  <iframe class="map" src="https://yandex.ru/map-widget/v1/?text=%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%BF.%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BE%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%82%D0%BE%D0%B2%D0%B0%2C%201&z=16" title="Карта: адрес компании" loading="lazy" allowfullscreen></iframe>
+</div></section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div>ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР» · ОГРН 1155543015231 · ИНН 5528030891 · КПП 552801001</div>
-    <div class="fl"><a href="#" data-dlg="privacy">Политика конфиденциальности</a><a href="#" data-dlg="consent">Согласие на обработку персональных данных</a></div>
-    <div style="margin-top:10px">© 2026 ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»</div>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <p>© 2026 ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР» · ОГРН 1155543015231 · ИНН 5528030891</p>
+  <p><a href="#" data-dlg="privacy">Политика конфиденциальности</a> · <a href="#" data-dlg="consent">Согласие на обработку данных</a> · <a href="#" data-dlg="rights">Ваши права (152-ФЗ)</a></p>
+  <p>Информация на сайте носит ознакомительный характер и не заменяет индивидуальную юридическую консультацию.</p>
+</div></footer>
 
-<dialog id="dlg"><h3 id="dt"></h3><p id="db"></p><button class="btn sm" onclick="document.getElementById('dlg').close()">Закрыть</button></dialog>
+<div class="dock"><div class="wrap">
+  <a class="btn call" data-tel href="#" aria-label="Позвонить">📞</a>
+  <span class="txt">Бесплатная консультация. Перезвоним в течение 15 минут в рабочее время.</span>
+  <button class="btn" data-open>Заказать звонок</button>
+</div></div>
+
+<dialog id="form"><div class="dlg">
+  <button class="x" type="button" aria-label="Закрыть" data-close>×</button>
+  <h2 style="font-size:1.4rem;padding-right:40px">Бесплатная консультация</h2>
+  <form id="f" novalidate>
+    <div class="hp" aria-hidden="true"><label>Сайт<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <label for="name">Ваше имя</label><input id="name" name="name" autocomplete="name"><div class="err" data-for="name"></div>
+    <label for="phone">Телефон</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"><div class="err" data-for="phone"></div>
+    <label for="type">Тема</label><select id="type" name="type"></select>
+    <label for="text">Коротко о ситуации (необязательно)</label><textarea id="text" name="text"></textarea>
+    <label class="chk"><input type="checkbox" id="agree" name="agree"><span>Согласен(на) на обработку персональных данных, ознакомлен(а) с <a href="#" data-dlg="privacy">политикой конфиденциальности</a></span></label>
+    <div class="err" data-for="agree"></div>
+    <button class="btn" id="send" type="submit">Отправить заявку</button>
+    <div id="msg" role="status" aria-live="polite"></div>
+  </form>
+</div></dialog>
+
+<dialog id="doc"><div class="dlg"><button class="x" type="button" aria-label="Закрыть" data-close>×</button>
+  <h2 style="font-size:1.3rem;padding-right:40px">Персональные данные (152-ФЗ)</h2>
+  <div class="tabs" role="tablist"><button class="tab" role="tab" data-tab="privacy">Политика</button><button class="tab" role="tab" data-tab="consent">Согласие</button><button class="tab" role="tab" data-tab="rights">Ваши права</button></div>
+  <div id="db"></div></div></dialog>
 
 <script>
-// ===== Настройки =====
-// Адрес вашего обработчика заявок (своя функция, Formspree, Telegram-прокси и т.п.).
-// Пока пусто — включён демо-режим: данные никуда не уходят.
+// ===== Контакты: меняйте только здесь =====
+const CFG = {phone:"+7 (000) 000-00-00", tel:"+70000000000", email:"info@example.ru",
+  tg:"https://t.me/username", wa:"https://wa.me/70000000000", hours:"пн–пт, 9:00–18:00"};
+// Адрес приёмника заявок (Vercel-функция). Пустой = демо-режим.
 const ENDPOINT = "/api/lead";
 
-// ===== Список услуг (редактируйте здесь) =====
-const SERVICES = [
-  ["Юридические консультации для бизнеса","Разбираем ситуацию и предлагаем понятный план действий."],
-  ["Регистрация и сопровождение ООО/ИП","Открытие, изменения, ликвидация, текущее сопровождение."],
-  ["Договорная работа и правовой аудит","Составляем и проверяем договоры, находим юридические риски."],
-  ["Представительство в судах","Готовим документы и представляем интересы в судах."],
-  ["Банкротство и взыскание задолженности","Помогаем вернуть долги или законно списать обязательства."],
-  ["Кадровое и налоговое право","Трудовые споры, документы, проверки, налоговые вопросы."]
+// ===== С чем помогаем: [заголовок, пояснение, тема в форме] =====
+const HELP = [
+  ["Долги по кредитам и займам","Что делать, если нечем платить","Долги"],
+  ["Приставы, арест счетов","Арест карты, удержания из зарплаты","Приставы"],
+  ["Коллекторы и звонки","Как защититься и куда жаловаться","Коллекторы"],
+  ["Банкротство гражданина","Через суд или МФЦ: подскажем, что подходит","Банкротство"],
+  ["Суды и иски","Подготовим документы, представим в суде","Суд"],
+  ["Договоры, сделки, недвижимость","Проверим документы до подписания","Договор"]
 ];
-document.getElementById("svcList").innerHTML = SERVICES.map(s=>`<div class="svc"><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
-
-// ===== Тексты окон (шаблон — перед публикацией согласуйте с юристом, 152-ФЗ) =====
+// ===== Полезные ссылки: [заголовок, пояснение, адрес]. Добавляйте свои статьи сюда =====
+const LINKS = [
+  ["Проверить долги у приставов","Банк данных исполнительных производств ФССП","https://fssp.gov.ru/iss/ip/"],
+  ["Картотека арбитражных дел","Найти дело о банкротстве или спор","https://kad.arbitr.ru/"],
+  ["Федресурс (ЕФРСБ)","Официальные сведения о банкротстве","https://fedresurs.ru/"],
+  ["Закон о банкротстве 127-ФЗ","Текст закона в системе КонсультантПлюс","https://www.consultant.ru/document/cons_doc_LAW_39331/"],
+  ["Госуслуги","Штрафы, налоги, заявления онлайн","https://www.gosuslugi.ru/"]
+];
+const OP = "ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР» (ОГРН 1155543015231, ИНН 5528030891, адрес: 644501, Омская область, Омский район, п. Новоомский, ул. Титова, д. 1, кв. 89)";
 const DOCS = {
-  privacy:["Политика конфиденциальности","Здесь размещается политика обработки персональных данных ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»: какие данные собираются (имя, телефон, e-mail, текст обращения), цели, сроки хранения, права субъекта и контакты оператора. Замените этот текст полным документом."],
-  consent:["Согласие на обработку персональных данных","Здесь размещается текст согласия на обработку персональных данных по 152-ФЗ. Замените этот текст полным документом."]
+privacy:["Политика",`
+<p class="dt">Редакция от 13 октября 2026 г.</p>
+<h3>1. Общие положения</h3>
+<p>Настоящая политика описывает, как ${OP} (далее — Оператор) обрабатывает персональные данные посетителей сайта. Она составлена в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+<h3>2. Какие данные мы получаем</h3>
+<ul><li>имя;</li><li>номер телефона;</li><li>тема и текст обращения (если вы их указали).</li></ul>
+<p>Сторонние сервисы, подключённые к сайту (шрифты, карта), могут получать технические данные браузера, например IP-адрес.</p>
+<h3>3. Цели обработки</h3>
+<ul><li>связаться с вами по вашей заявке;</li><li>провести консультацию;</li><li>заключить и исполнить договор, если вы решите продолжить работу.</li></ul>
+<h3>4. Основание</h3>
+<p>Данные обрабатываются на основании вашего согласия, которое вы даёте, отмечая галочку в форме заявки (ст. 6, 9 152-ФЗ).</p>
+<h3>5. Что мы делаем с данными</h3>
+<p>Собираем, записываем, храним, используем для связи с вами, при необходимости уточняем, блокируем и удаляем. Мы не продаём данные и не используем их для рассылок без вашего согласия.</p>
+<h3>6. Передача третьим лицам</h3>
+<p>Заявки поступают Оператору через сервисы связи, в том числе мессенджер Telegram. Другим лицам данные передаются только по требованию закона или с вашего согласия.</p>
+<h3>7. Срок хранения</h3>
+<p>Пока это нужно для обработки обращения, но не дольше одного года с даты заявки, если договор не заключён и закон не требует иного. После этого данные удаляются.</p>
+<h3>8. Защита данных</h3>
+<p>Оператор принимает правовые, организационные и технические меры, чтобы защитить данные от неправомерного доступа, изменения и удаления. Доступ к заявкам есть только у сотрудников, которым он нужен для работы.</p>
+<h3>9. Ваши права и контакты</h3>
+<p>Права субъекта персональных данных описаны во вкладке «Ваши права». Обращения принимаются по e-mail <span data-cfg="email"></span> или по юридическому адресу Оператора.</p>`],
+consent:["Согласие",`
+<p>Я, действуя свободно, своей волей и в своём интересе, даю согласие ${OP} (далее — Оператор) на обработку моих персональных данных на следующих условиях.</p>
+<h3>Какие данные</h3>
+<p>Имя, номер телефона, тема и содержание моего обращения.</p>
+<h3>Цель</h3>
+<p>Связь со мной по моей заявке, юридическая консультация, заключение и исполнение договора об оказании услуг.</p>
+<h3>Действия с данными</h3>
+<p>Сбор, запись, систематизация, накопление, хранение, уточнение, использование, передача (в том числе через мессенджер Telegram для получения заявки Оператором), блокирование, удаление, уничтожение. Обработка осуществляется с использованием средств автоматизации и без них.</p>
+<h3>Срок действия и отзыв</h3>
+<p>Согласие действует до достижения цели обработки, но не дольше одного года с даты заявки, если договор не заключён. Я могу отозвать согласие в любой момент, направив Оператору обращение на e-mail <span data-cfg="email"></span> или по юридическому адресу. Оператор прекратит обработку и удалит данные в срок, установленный законом (не более 30 дней с получения отзыва), если закон не требует их хранения.</p>
+<p>Отмечая галочку в форме заявки, я подтверждаю, что ознакомился(лась) с политикой конфиденциальности и согласен(на) с изложенным.</p>`],
+rights:["Ваши права",`
+<p>Согласно ст. 14 152-ФЗ вы вправе:</p>
+<ul>
+<li>узнать, обрабатывает ли Оператор ваши данные, и получить информацию об этой обработке;</li>
+<li>потребовать уточнить данные, заблокировать или удалить их, если они неполные, устаревшие, неточные или получены незаконно либо не нужны для заявленной цели;</li>
+<li>в любой момент отозвать согласие на обработку;</li>
+<li>обжаловать действия Оператора в Роскомнадзор (rkn.gov.ru) или в суд, а также защищать свои права и требовать возмещения убытков.</li>
+</ul>
+<h3>Как воспользоваться правами</h3>
+<p>Напишите на e-mail <span data-cfg="email"></span> или направьте обращение по адресу: 644501, Омская область, Омский район, п. Новоомский, ул. Титова, д. 1, кв. 89. Укажите имя и телефон, которые вы оставляли в заявке, и суть просьбы.</p>
+<h3>В какие сроки отвечаем</h3>
+<p>На запрос о ваших данных Оператор отвечает в течение 10 рабочих дней. Этот срок может быть продлён не более чем на 5 рабочих дней с уведомлением о причинах.</p>`]
 };
-const dlg = document.getElementById("dlg");
-document.querySelectorAll("[data-dlg]").forEach(a=>a.addEventListener("click",e=>{
-  e.preventDefault(); const d=DOCS[a.dataset.dlg];
-  document.getElementById("dt").textContent=d[0]; document.getElementById("db").textContent=d[1]; dlg.showModal();
-}));
 
-// ===== Маска телефона +7 (___) ___-__-__ =====
-const phone = document.getElementById("phone");
+const $ = (s,r=document)=>r.querySelector(s), $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+$$("[data-cfg]").forEach(e=>e.textContent=CFG[e.dataset.cfg]);
+$$("[data-tel]").forEach(e=>e.href="tel:"+CFG.tel);
+$("[data-tg]").href=CFG.tg; $("[data-wa]").href=CFG.wa;
+
+const topics = [...new Set(HELP.map(h=>h[2])), "Другое"];
+$("#type").innerHTML = topics.map(t=>`<option>${t}</option>`).join("");
+$("#help").innerHTML = HELP.map((h,i)=>`<button type="button" data-topic="${h[2]}"><span><b>${h[0]}</b><small>${h[1]}</small></span><i>›</i></button>`).join("");
+$("#links").innerHTML = LINKS.map(l=>`<a href="${l[2]}" target="_blank" rel="noopener"><span><b>${l[0]}</b><small>${l[1]}</small></span><i>↗</i></a>`).join("");
+
+const form = $("#form");
+function openForm(topic){ if(topic) $("#type").value=topic; $("#msg").textContent=""; form.showModal(); }
+$$("[data-open]").forEach(b=>b.addEventListener("click",()=>openForm()));
+$$("[data-topic]").forEach(b=>b.addEventListener("click",()=>openForm(b.dataset.topic)));
+$$("dialog").forEach(d=>{
+  d.addEventListener("click",e=>{ if(e.target===d) d.close(); });
+  $$("[data-close]",d).forEach(b=>b.addEventListener("click",()=>d.close()));
+});
+const doc = $("#doc");
+function showDoc(k){
+  $$(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.tab===k));
+  const b=$("#db"); b.innerHTML=DOCS[k][1]; b.scrollTop=0;
+  $$("[data-cfg]",b).forEach(e=>e.textContent=CFG[e.dataset.cfg]);
+  if(!doc.open){ if(form.open) form.close(); doc.showModal(); }
+}
+$$("[data-dlg]").forEach(a=>a.addEventListener("click",e=>{ e.preventDefault(); showDoc(a.dataset.dlg); }));
+$$(".tab").forEach(t=>t.addEventListener("click",()=>showDoc(t.dataset.tab)));
+
+// Маска телефона
+const phone=$("#phone");
 phone.addEventListener("input",()=>{
-  let d = phone.value.replace(/\D/g,"");
-  if(d[0]==="7"||d[0]==="8") d=d.slice(1);
-  d=d.slice(0,10);
-  let v = d.length? "+7 ("+d.slice(0,3) : "";
-  if(d.length>=3) v+=") "+d.slice(3,6);
-  if(d.length>=6) v+="-"+d.slice(6,8);
-  if(d.length>=8) v+="-"+d.slice(8,10);
+  let d=phone.value.replace(/\D/g,""); if(d[0]==="7"||d[0]==="8") d=d.slice(1); d=d.slice(0,10);
+  let v=d.length?"+7 ("+d.slice(0,3):""; if(d.length>=3)v+=") "+d.slice(3,6); if(d.length>=6)v+="-"+d.slice(6,8); if(d.length>=8)v+="-"+d.slice(8,10);
   phone.value=v;
 });
 
-// ===== Валидация и отправка =====
-const f = document.getElementById("f"), msg = document.getElementById("msg"), btn = document.getElementById("send");
-function setErr(id,t){ f.querySelector(`[data-for="${id}"]`).textContent=t||""; const el=document.getElementById(id); if(el) el.classList.toggle("bad",!!t); }
+// Проверка и отправка
+const f=$("#f"), msg=$("#msg"), btn=$("#send");
+function setErr(id,t){ $(`[data-for="${id}"]`).textContent=t||""; const el=$("#"+id); if(el.type!=="checkbox") el.classList.toggle("bad",!!t); }
 function validate(){
   let ok=true;
-  const n=f.name.value.trim(); setErr("name", n.length<2?"Укажите имя":""); if(n.length<2) ok=false;
-  const p=phone.value.replace(/\D/g,""); setErr("phone", p.length!==11?"Введите телефон полностью":""); if(p.length!==11) ok=false;
-  const e=f.email.value.trim(); const eb=e && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); setErr("email", eb?"Проверьте адрес e-mail":""); if(eb) ok=false;
-  setErr("agree", f.agree.checked?"":"Нужно согласие на обработку данных"); if(!f.agree.checked) ok=false;
+  const n=f.name.value.trim().length<2; setErr("name",n?"Укажите имя":""); if(n) ok=false;
+  const p=phone.value.replace(/\D/g,"").length!==11; setErr("phone",p?"Введите номер полностью":""); if(p) ok=false;
+  setErr("agree",f.agree.checked?"":"Нужно согласие на обработку данных"); if(!f.agree.checked) ok=false;
   return ok;
 }
-f.addEventListener("submit", async e=>{
+f.addEventListener("submit",async e=>{
   e.preventDefault(); msg.className=""; msg.textContent="";
   if(!validate()) return;
-  if(f.website.value) return; // honeypot: бот заполнил скрытое поле
-  const data = Object.fromEntries(new FormData(f)); delete data.website;
+  if(f.website.value) return; // ловушка для ботов
+  const data=Object.fromEntries(new FormData(f)); delete data.website;
   btn.disabled=true; btn.textContent="Отправляем…";
   try{
-    if(ENDPOINT){
-      const r = await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
-      if(!r.ok) throw new Error(r.status);
-    } else { console.info("Демо-режим, ENDPOINT не задан. Данные формы:", data); await new Promise(r=>setTimeout(r,500)); }
+    if(ENDPOINT){ const r=await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}); if(!r.ok) throw new Error(r.status); }
+    else { console.info("Демо-режим:",data); await new Promise(r=>setTimeout(r,500)); }
     msg.className="ok"; msg.textContent="Спасибо! Мы свяжемся с вами в течение 15 минут в рабочее время."; f.reset();
-  }catch(err){
-    msg.className="fail"; msg.textContent="Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.";
-  }finally{ btn.disabled=false; btn.textContent="Отправить заявку"; }
+  }catch(err){ msg.className="fail"; msg.textContent="Не удалось отправить. Позвоните нам или попробуйте ещё раз."; }
+  finally{ btn.disabled=false; btn.textContent="Отправить заявку"; }
 });
 </script>
 </body>
