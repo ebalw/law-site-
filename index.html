@@ -16,12 +16,12 @@
 </script>
 <style>
 :root{
-  --bg:#fff; --soft:#eef4f8; --ink:#1c2a39; --mute:#566577; --line:#d8e0e8; --brand:#17406e; --cta:#1b7f55; --cta-h:#146644; --hero:#17406e; --on-hero:#fff; --hero-mute:#c9d8ea;
+  --bg:#F8FAFC; --soft:#F1F5F9; --ink:#1E293B; --mute:#475569; --line:#D5DDE8; --brand:#1E293B; --cta:#15803D; --cta-h:#166534; --on-cta:#fff; --hero:#1E293B; --on-hero:#fff; --hero-mute:#CBD5E1;
   --sans:"PT Sans","Segoe UI",Roboto,Arial,sans-serif;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1824;--soft:#16222f;--ink:#e8eef5;--mute:#9fb0c3;--line:#2a3a4c;--brand:#8cb8ea;--hero:#12263d;--cta:#25a06c;--cta-h:#2bb47a}}
-:root[data-theme="dark"]{--bg:#0f1824;--soft:#16222f;--ink:#e8eef5;--mute:#9fb0c3;--line:#2a3a4c;--brand:#8cb8ea;--hero:#12263d;--cta:#25a06c;--cta-h:#2bb47a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F172A;--soft:#1E293B;--ink:#F1F5F9;--mute:#94A3B8;--line:#334155;--brand:#E2E8F0;--hero:#1E293B;--cta:#22C55E;--cta-h:#4ADE80;--on-cta:#0F172A}}
+:root[data-theme="dark"]{--bg:#0F172A;--soft:#1E293B;--ink:#F1F5F9;--mute:#94A3B8;--line:#334155;--brand:#E2E8F0;--hero:#1E293B;--cta:#22C55E;--cta-h:#4ADE80;--on-cta:#0F172A}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--sans);padding-bottom:84px}
@@ -31,8 +31,8 @@ p{margin:0 0 1em} a{color:inherit}
 :focus-visible{outline:3px solid #f2b705;outline-offset:2px}
 .wrap{max-width:900px;margin:0 auto;padding:0 18px}
 section{padding:44px 0}.soft{background:var(--soft)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border:0;border-radius:12px;background:var(--cta);color:#fff;font:700 1.05rem var(--sans);text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--cta-h)} .btn.line{background:transparent;border:2px solid currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border:0;border-radius:12px;background:var(--cta);color:var(--on-cta);font:700 1.05rem var(--sans);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--cta-h)} .btn.line{background:transparent;color:var(--ink);border:2px solid currentColor}
 /* шапка */
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
@@ -44,8 +44,8 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 .hero p.lead{color:var(--hero-mute);font-size:1.12rem;max-width:34em}
 .ticks{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:10px}
 .ticks li{padding-left:32px;position:relative}
-.ticks li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:#2bb47a;color:#fff;font-size:.9rem;display:grid;place-items:center;line-height:1}
-.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.ticks li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--cta);color:var(--on-cta);font-weight:700;font-size:.9rem;display:grid;place-items:center;line-height:1}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}.hero .row .btn{flex:1 1 140px}.hero .row .btn:first-child{flex-basis:100%}
 .hero .btn.line{color:#fff}
 .sub{font-size:.9rem;color:var(--hero-mute);margin:16px 0 0}
 /* строки-ссылки */
@@ -66,7 +66,6 @@ summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:1.5rem
 details p{color:var(--mute);padding-right:20px}
 /* о компании */
 dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:.95rem;margin:16px 0}dt{color:var(--mute)}dd{margin:0;font-weight:700}
-.map{display:block;width:100%;height:320px;border:1px solid var(--line);border-radius:12px;margin-top:16px;background:var(--soft)}
 .cl{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.cl .btn{min-height:46px;padding:8px 18px;font-size:1rem}
 footer{padding:28px 0;font-size:.85rem;color:var(--mute);border-top:1px solid var(--line)}
 footer a{color:var(--brand)}
@@ -117,7 +116,7 @@ textarea{min-height:76px;resize:vertical}
     <li>Стоимость фиксируем в договоре до начала работы</li>
     <li>Работаем по всей России, в том числе дистанционно</li>
   </ul>
-  <div class="row"><button class="btn" data-open>Бесплатная консультация</button><a class="btn line" data-tel href="#">Позвонить</a></div>
+  <div class="row"><button class="btn" data-open>Бесплатная консультация</button><a class="btn line" data-tel href="#">Позвонить</a><button class="btn line" data-write>Написать</button></div>
   <p class="sub">Работаем с 2015 года · ООО «ЕДИНЫЙ ПРАВОВОЙ ЦЕНТР»</p>
 </div></div>
 
@@ -160,8 +159,7 @@ textarea{min-height:76px;resize:vertical}
     <dt>Часы работы</dt><dd data-cfg="hours"></dd>
     <dt>E-mail</dt><dd data-cfg="email"></dd>
   </dl>
-  <div class="cl"><a class="btn line" data-tg href="#" rel="noopener">Telegram</a><a class="btn line" data-wa href="#" rel="noopener">WhatsApp</a></div>
-  <iframe class="map" src="https://yandex.ru/map-widget/v1/?text=%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%BF.%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BE%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%82%D0%BE%D0%B2%D0%B0%2C%201&z=16" title="Карта: адрес компании" loading="lazy" allowfullscreen></iframe>
+  <div class="cl"><a class="btn" href="https://yandex.ru/maps/?text=%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%BF.%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BE%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%82%D0%BE%D0%B2%D0%B0%2C%201" target="_blank" rel="noopener">📍 Открыть на Яндекс.Картах</a><button class="btn line" data-write>Написать нам</button></div>
 </div></section>
 </main>
 
@@ -173,6 +171,7 @@ textarea{min-height:76px;resize:vertical}
 
 <div class="dock"><div class="wrap">
   <a class="btn call" data-tel href="#" aria-label="Позвонить">📞</a>
+  <button class="btn call" data-write aria-label="Написать в мессенджер">💬</button>
   <span class="txt">Бесплатная консультация. Перезвоним в течение 15 минут в рабочее время.</span>
   <button class="btn" data-open>Заказать звонок</button>
 </div></div>
@@ -193,6 +192,12 @@ textarea{min-height:76px;resize:vertical}
   </form>
 </div></dialog>
 
+<dialog id="write"><div class="dlg">
+  <button class="x" type="button" aria-label="Закрыть" data-close>×</button>
+  <h2 style="font-size:1.4rem;padding-right:40px">Написать нам</h2>
+  <div id="wbody"></div>
+</div></dialog>
+
 <dialog id="doc"><div class="dlg"><button class="x" type="button" aria-label="Закрыть" data-close>×</button>
   <h2 style="font-size:1.3rem;padding-right:40px">Персональные данные (152-ФЗ)</h2>
   <div class="tabs" role="tablist"><button class="tab" role="tab" data-tab="privacy">Политика</button><button class="tab" role="tab" data-tab="consent">Согласие</button><button class="tab" role="tab" data-tab="rights">Ваши права</button></div>
@@ -200,8 +205,15 @@ textarea{min-height:76px;resize:vertical}
 
 <script>
 // ===== Контакты: меняйте только здесь =====
-const CFG = {phone:"+7 (000) 000-00-00", tel:"+70000000000", email:"info@example.ru",
-  tg:"https://t.me/username", wa:"https://wa.me/70000000000", hours:"пн–пт, 9:00–18:00"};
+const CFG = {phone:"+7 (000) 000-00-00", tel:"+70000000000", email:"info@example.ru", hours:"пн–пт, 9:00–18:00"};
+// ===== Мессенджеры: [название, ссылка]. Раскомментируйте строку и подставьте свою ссылку =====
+// Пока список пустой, кнопка «Написать» покажет подсказку позвонить или оставить заявку.
+const MESSENGERS = [
+  // ["Telegram","https://t.me/ваш_ник"],
+  // ["WhatsApp","https://wa.me/79991234567"],
+  // ["MAX","https://max.ru/ваша_ссылка"],
+  // ["ВКонтакте","https://vk.me/ваша_ссылка"],
+];
 // Адрес приёмника заявок (Vercel-функция). Пустой = демо-режим.
 const ENDPOINT = "/api/lead";
 
@@ -273,7 +285,6 @@ rights:["Ваши права",`
 const $ = (s,r=document)=>r.querySelector(s), $$ = (s,r=document)=>[...r.querySelectorAll(s)];
 $$("[data-cfg]").forEach(e=>e.textContent=CFG[e.dataset.cfg]);
 $$("[data-tel]").forEach(e=>e.href="tel:"+CFG.tel);
-$("[data-tg]").href=CFG.tg; $("[data-wa]").href=CFG.wa;
 
 const topics = [...new Set(HELP.map(h=>h[2])), "Другое"];
 $("#type").innerHTML = topics.map(t=>`<option>${t}</option>`).join("");
@@ -288,6 +299,16 @@ $$("dialog").forEach(d=>{
   d.addEventListener("click",e=>{ if(e.target===d) d.close(); });
   $$("[data-close]",d).forEach(b=>b.addEventListener("click",()=>d.close()));
 });
+const write = $("#write");
+function showWrite(){
+  const list = MESSENGERS.filter(m=>m[1]);
+  $("#wbody").innerHTML = list.length
+    ? `<p style="color:var(--mute)">Выберите удобный мессенджер.</p><div class="rows">${list.map(m=>`<a href="${m[1]}" target="_blank" rel="noopener"><span><b>${m[0]}</b><small>Написать в ${m[0]}</small></span><i>↗</i></a>`).join("")}</div>`
+    : `<p style="color:var(--mute)">Мессенджеры скоро появятся. Пока можно позвонить или оставить заявку, и мы перезвоним.</p><button class="btn" type="button" data-form style="width:100%">Оставить заявку</button>`;
+  write.showModal();
+}
+$$("[data-write]").forEach(b=>b.addEventListener("click",showWrite));
+$("#wbody").addEventListener("click",e=>{ if(e.target.closest("[data-form]")){ write.close(); openForm(); } });
 const doc = $("#doc");
 function showDoc(k){
   $$(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.tab===k));
